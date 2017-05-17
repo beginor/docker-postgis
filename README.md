@@ -1,6 +1,6 @@
 # PostGIS with ESRI addons
 
-PostGIS with ESRI addons, Ready for using with ArcMap 10.3.x and GeoServer.
+PostGIS with ESRI addons, Ready for using with ArcMap 10.3.x.
 
 Example usage:
 
@@ -20,3 +20,4 @@ docker run \
     --hostname postgis \
     beginor/postgis:9.3
 ```
+
