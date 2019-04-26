@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build --no-cache --rm -t beginor/postgis:test .
+docker build --no-cache --rm -t beginor/postgis:10 .
