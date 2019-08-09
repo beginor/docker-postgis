@@ -1,6 +1,6 @@
-# PostGIS with ESRI addons
+# PostGIS with ESRI addons and timescaledb
 
-PostGIS with ESRI addons, Ready for using with ArcMap 10.6.x.
+PostGIS with ESRI addons, Ready for using with ArcMap 10.7.x.
 
 Example usage:
 
