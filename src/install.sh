@@ -1,6 +1,6 @@
 #!/bin/bash -e
-POSTGIS_MAJOR=2.5
-POSTGIS_VERSION=2.5.2+dfsg-1~exp1.pgdg90+1
+POSTGIS_MAJOR=3
+POSTGIS_VERSION=3.0.0+dfsg-2~exp1.pgdg90+1
 # ArcGIS support files
 mv /tmp/src/postgres_support/10/*.so /usr/lib/postgresql/10/lib/
 # Update and install tools packages
@@ -8,7 +8,7 @@ apt-get update && apt-get upgrade -y
 apt-get install -y --no-install-recommends wget apt-transport-https ca-certificates
 # TimescaleDB repository
 wget --quiet -O - https://packagecloud.io/timescale/timescaledb/gpgkey | apt-key add -
-sh -c "echo 'deb https://packagecloud.io/timescale/timescaledb/debian/ `lsb_release -c -s` main' > /etc/apt/sources.list.d/timescaledb.list"
+sh -c "echo 'deb https://packagecloud.io/timescale/timescaledb/debian/ stretch main' > /etc/apt/sources.list.d/timescaledb.list"
 apt-get update
 apt-get install -y timescaledb-postgresql-10
 # Install PostGIS
