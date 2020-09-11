@@ -1,6 +1,6 @@
 # PostGIS with ESRI addons and timescaledb
 
-PostGIS with ESRI addons, Ready for using with ArcMap 10.7.x.
+PostGIS with ESRI addons, Ready for using with ArcMap 10.8.x.
 
 Example usage:
 
@@ -18,6 +18,6 @@ docker run \
     --publish 5432:5432 \
     --restart unless-stopped \
     --hostname postgis \
-    beginor/postgis:9.6
+    beginor/postgis:11
 ```
 
