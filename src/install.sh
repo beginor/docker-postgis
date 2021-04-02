@@ -1,14 +1,12 @@
 #!/bin/bash -e
-# ArcGIS support files
-mv /tmp/src/postgres_support/12/*.so /usr/lib/postgresql/12/lib/
 # Update and install tools packages
 apt-get update && apt-get upgrade -y
 apt-get install -y --no-install-recommends wget apt-transport-https ca-certificates
 # TimescaleDB repository
 wget --quiet -O - https://packagecloud.io/timescale/timescaledb/gpgkey | apt-key add -
-sh -c "echo 'deb https://packagecloud.io/timescale/timescaledb/debian/ stretch main' > /etc/apt/sources.list.d/timescaledb.list"
+sh -c "echo 'deb https://packagecloud.io/timescale/timescaledb/debian/ buster main' > /etc/apt/sources.list.d/timescaledb.list"
 apt-get update
-apt-get install -y timescaledb-postgresql-12
+apt-get install -y timescaledb-2-postgresql-13
 # Init scripts
 mkdir -p /docker-entrypoint-initdb.d
 mv /tmp/src/timescaledb-tune.sh /docker-entrypoint-initdb.d/

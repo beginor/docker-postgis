@@ -1,6 +1,10 @@
-# PostGIS with ESRI addons and timescaledb
+# beginor/postgis
 
-PostGIS with ESRI addons, Ready for using with ArcMap 10.8.1.
+Version info:
+
+- PostgreSQL 13.x
+- PostGIS 3.x
+- TimeScaleDB 2.x
 
 Example usage:
 
@@ -18,6 +22,6 @@ docker run \
     --publish 5432:5432 \
     --restart unless-stopped \
     --hostname postgis \
-    beginor/postgis:12
+    beginor/postgis:13
 ```
 
