@@ -24,4 +24,3 @@ docker run \
     --hostname postgis \
     beginor/postgis:13
 ```
-
