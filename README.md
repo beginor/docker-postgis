@@ -2,9 +2,9 @@
 
 Version info:
 
-- PostgreSQL 13.x
-- PostGIS 3.x
-- TimeScaleDB 2.x
+- PostgreSQL 13.4
+- PostGIS 3.1.3
+- TimeScaleDB 2.4.0
 
 Example usage:
 
