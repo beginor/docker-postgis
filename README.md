@@ -2,9 +2,9 @@
 
 Version info:
 
-- PostgreSQL 13.4
-- PostGIS 3.1.3
-- TimeScaleDB 2.4.0
+- PostgreSQL 14.1
+- PostGIS 3.2.0
+- TimeScaleDB 2.5.1
 
 Example usage:
 
@@ -22,5 +22,5 @@ docker run \
     --publish 5432:5432 \
     --restart unless-stopped \
     --hostname postgis \
-    beginor/postgis:13
+    beginor/postgis:14-3.2.2022.0207
 ```

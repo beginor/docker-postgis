@@ -1,4 +1,4 @@
-FROM postgis/postgis:13-3.1
+FROM postgis/postgis:14-3.2
 
 COPY ./src /tmp/src
 RUN /tmp/src/install.sh
