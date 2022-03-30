@@ -1,3 +1,9 @@
 #!/bin/bash
 
-docker build --no-cache --rm -t beginor/postgis:14-3.2.2022.0207 .
+docker buildx build \
+  --platform linux/amd64 \
+  --platform linux/arm64 \
+  -t beginor/postgis:latest \
+  -t beginor/postgis:$(date +%Y%m%d) \
+  --push \
+  .
