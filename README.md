@@ -2,8 +2,8 @@
 
 Version info:
 
-- PostgreSQL 14.x
-- PostGIS 3.2.x
+- PostgreSQL 16.x
+- PostGIS 3.4.x
 - TimeScaleDB 2.x
 
 Example usage:
