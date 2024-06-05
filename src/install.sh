@@ -10,7 +10,7 @@ echo "deb https://packagecloud.io/timescale/timescaledb/debian/ $(lsb_release -c
 # TimescaleDB GPG key
 wget --quiet -O - https://packagecloud.io/timescale/timescaledb/gpgkey | gpg --dearmor -o /etc/apt/trusted.gpg.d/timescaledb.gpg
 apt-get update
-apt-get install -y timescaledb-2-postgresql-14
+apt-get install -y timescaledb-2-postgresql-16
 # Init scripts
 mkdir -p /docker-entrypoint-initdb.d
 mv /tmp/src/initdb-postgis.sh /docker-entrypoint-initdb.d/10_postgis.sh
