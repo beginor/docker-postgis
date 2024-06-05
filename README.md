@@ -5,6 +5,7 @@ Version info:
 - PostgreSQL 16.x
 - PostGIS 3.4.x
 - TimeScaleDB 2.x
+- pgvector
 
 Example usage:
 
