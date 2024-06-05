@@ -23,5 +23,5 @@ docker run \
     --publish 5432:5432 \
     --restart unless-stopped \
     --hostname postgis \
-    beginor/postgis:14-3.2
+    beginor/postgis:16-3.4
 ```
