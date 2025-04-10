@@ -2,9 +2,8 @@
 
 Version info:
 
-- PostgreSQL 16.x
-- PostGIS 3.4.x
-- TimeScaleDB 2.x
+- PostgreSQL 17.x
+- PostGIS 3.7.x
 - pgvector
 
 Example usage:
@@ -23,5 +22,5 @@ docker run \
     --publish 5432:5432 \
     --restart unless-stopped \
     --hostname postgis \
-    beginor/postgis:16-3.4
+    beginor/postgis:17-3.5
 ```
